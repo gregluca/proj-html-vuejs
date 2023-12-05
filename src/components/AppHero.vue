@@ -35,7 +35,7 @@ export default {
         color: white;
 
         .center-text {
-            position: fixed;
+            position: absolute;
             top: 25%;
             letter-spacing: 5px;
         }
