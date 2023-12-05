@@ -1,9 +1,17 @@
 <script>
+import AppButton from './AppButton.vue';
+
 
 export default {
     props: {
         elems: Array
-    }
+    },
+    data() {
+        return {
+            buttonText:"BOOK NOW"
+        };
+    },
+    components: { AppButton }
 }
 </script>
 <template>
@@ -12,11 +20,13 @@ export default {
         <img src="../assets/img/avada-drivers-logo-2x.png" alt="">
         <ul>
             <li v-for="(elem , index) in elems" :key="index"><a href="">{{ elem }}</a></li>
+            <AppButton :buttonText="buttonText"/>
         </ul>
     </div>
 </div>
 </template>
 <style scoped lang="scss">
+@use "../style/partials/variables" as *;
 .big-container {
     background-color: rgba(0,0,0,0.9);
     color: white;
@@ -27,6 +37,7 @@ export default {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem;
 
     img {
@@ -39,6 +50,7 @@ export default {
    ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     li {
         text-decoration: none;
@@ -52,8 +64,8 @@ export default {
         }
     }
     a:hover {
-        color: green;
-        border-bottom: 3px solid green;
+        color: $green-color;
+        border-bottom: 3px solid $green-color;
         padding-top: 30px;
     }
    }
