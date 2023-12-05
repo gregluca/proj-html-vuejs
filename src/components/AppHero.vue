@@ -30,7 +30,7 @@ export default {
     background-size: cover;
 
     .small-container {
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
         color: white;
 

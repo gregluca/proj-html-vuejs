@@ -13,12 +13,13 @@ props: {
 <style scoped lang="scss">
 @use "../style/partials/variables" as *;
 button {
+    width: 70%;
     background-color: $green-color;
     border: none;
     padding: 10px;
     border-radius: 1rem;
     letter-spacing: 1px;
-    width: 50%;
+    font-size: .6rem;
 
     a {
         text-decoration: none;

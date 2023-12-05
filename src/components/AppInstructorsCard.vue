@@ -11,12 +11,12 @@ export default {
                 },
                 {
                     name:"John Smith",
-                    image: "instructor-mikehart",
+                    image: "instructor-johnsmith",
                     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, porro consectetur."
                 },
                 {
                     name:"Angela Hart",
-                    image: "instructor-mikehart",
+                    image: "instructor-angelahart",
                     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, porro consectetur."
                 }
             ]
@@ -27,10 +27,13 @@ export default {
 <template>
 <div class="big-container">
     <div class="small-container">
+        <div class="instructos-box">
         <div class="row">
             <div class="col" v-for="(instructor, index) in instructors" :key="index">
                 <div class="card">
-                    <img :src="`../assets/img/${instructor.image}.jpg`" alt="">
+                    <div class="img-container">
+                        <img :src="`src/assets/img/${instructor.image}.jpg`" alt="">
+                    </div>
                     <h4>{{ instructor.name }}</h4>
                     <div class="logos">
                         <i class="fa-brands fa-facebook-f"></i>
@@ -39,9 +42,10 @@ export default {
                     </div>
                     <p>{{ instructor.description }}</p>
                 </div>
+            </div>
         </div>
     </div>
-</div>
+    </div>
 </div>
 </template>
 <style scoped lang="scss">
@@ -50,19 +54,51 @@ export default {
     width: 100%;
 }
 .small-container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
+.instructos-box {
+    margin-top: 20px;
+}
 .row {
-    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
 
     .col {
-        height: 100px;
 
         .card {
-            img {
-                width: 100px;
+            border-top: 6px solid $green-color;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            p {
+                color: $btn-grey;
             }
+            h4 {
+                font-size: 1rem;
+            }
+            
+            .img-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 1rem;
+
+                img {
+                    width: 200px;
+                }
+            }
+
+            .logos {
+                color: $btn-grey;
+
+                i {
+                    margin-right: 1rem;
+                }
+            }
+        }
+        .card:hover{
+            position: relative;
+            transform: scale(1.2);
         }
     }
 }

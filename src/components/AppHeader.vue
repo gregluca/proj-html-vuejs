@@ -33,7 +33,7 @@ export default {
 }
 .small-container {
     font-size: .8rem;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;

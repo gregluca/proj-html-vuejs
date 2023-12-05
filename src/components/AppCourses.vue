@@ -56,12 +56,14 @@ export default {
     width: 100%;
 }
 .small-container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     
 
     .card {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
         img {
             position: absolute;
             width: 100px;
@@ -70,6 +72,7 @@ export default {
             border-radius: 5px;
         }
         h3 {
+            position: relative;
             padding: 1rem;
         }
         width: 40%;

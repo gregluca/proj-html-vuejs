@@ -45,7 +45,7 @@ export default {
     width: 100%;
 }
 .small-container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 
     .row {

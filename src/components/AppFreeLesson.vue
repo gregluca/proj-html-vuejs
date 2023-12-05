@@ -43,7 +43,7 @@ export default {
     padding: 1rem;
 }
 .small-container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
 

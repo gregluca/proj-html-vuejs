@@ -67,7 +67,7 @@ export default {
     background-repeat: no-repeat;
 }
 .small-container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 
     .box-monials {
@@ -88,6 +88,9 @@ export default {
             font-size: 1rem;
             cursor: pointer;
         }
+    }
+    img:active {
+        transform: scale(2);
     }
 }
 </style>
