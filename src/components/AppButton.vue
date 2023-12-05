@@ -7,7 +7,7 @@ props: {
 }
 </script>
 <template>
-<button>{{ buttonText }}</button>
+<button><a href="">{{ buttonText }}</a></button>
 
 </template>
 <style scoped lang="scss">
@@ -15,10 +15,14 @@ props: {
 button {
     background-color: $green-color;
     border: none;
+    padding: 10px;
     border-radius: 1rem;
-    padding: 5px;
-    width: 100px;
-    color: white;
-    font-size: .8rem;
+    letter-spacing: 1px;
+    width: 50%;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
 </style>

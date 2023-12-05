@@ -1,11 +1,14 @@
 <script>
+import AppButton from './AppButton.vue';
+
 
 export default {
     data() {
         return {
-
-        }
-    }
+            buttonText: "REQUEST A CALLBACK"
+        };
+    },
+    components: { AppButton }
 }
 </script>
 <template>
@@ -27,6 +30,7 @@ export default {
                     <input class="form-control" type="text" placeholder="Email">
                     <input class="form-control" type="text" placeholder="Telephone">
                     <input class="form-control" type="text" placeholder="Location">
+                    <AppButton :buttonText="buttonText" />
                 </div>
             </div>       
         </div>
@@ -61,12 +65,14 @@ export default {
         width: 40%;
 
     .card {
+        padding-bottom: 2rem;
         border: none;
         box-shadow: 1px  1px 0px #dedede,
                     -1px -2px  #dedede,
                     -5px  10px 5px #dedede;
     }
-    .form {        
+    .form {     
+        text-align: center;
         input {
             color: $btn-grey;
             background-color: #f7f7f7 ;

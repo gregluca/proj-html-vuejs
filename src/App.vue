@@ -1,12 +1,11 @@
 <script>
 import AppFooter from './components/AppFooter.vue';
-import AppFreeLesson from './components/AppFreeLesson.vue';
 import AppHeader from './components/AppHeader.vue';
 import Apphero from './components/AppHero.vue';
-import AppButton from './components/AppButton.vue'
+import AppBody from './components/AppBody.vue';
 
 export default {
-  components: { AppFooter, Apphero, AppHeader, AppFreeLesson, AppButton },
+  components: { AppFooter, Apphero, AppHeader, AppBody },
 
   data() {
     return {
@@ -16,14 +15,14 @@ export default {
 }
 </script>
 <template>
+
 <AppHeader :elems="elemHeader" />
 <Apphero />
-<AppFreeLesson />
-<h1>ciao utente</h1>
+<AppBody />
 <AppFooter />
-<AppButton />
 </template>
+
 <style lang="scss">
 @use"./style/general.scss";
-
+@import "@fortawesome/fontawesome-free/css/all.css";
 </style>

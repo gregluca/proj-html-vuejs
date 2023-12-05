@@ -9,8 +9,6 @@ export default {
 }
 </script>
 <template>
-<h2>welocme</h2>
-<p>bene</p>
 </template>
 <style scoped lang="scss">
 
