@@ -17,7 +17,7 @@ export default {
         <div class="card">
             <img src="../assets/img/new-corner.jpg" alt="">
             <h3>Courses</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente minima cumque provident esse voluptatem error, at quibusdam illum recusandae rem placeat nostrum, perferendis laborum quisquam delectus laudantium. Aspernatur, eligendi pariatur.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente minima cumque provident esse voluptatem error, at quibusdam </p>
             <AppButton :buttonText="buttontext"/>
         </div>
         <div class="row">
@@ -59,7 +59,7 @@ export default {
     width: 80%;
     margin: 0 auto;
     display: flex;
-    align-items:flex-end;
+    
 
     .card {
         img {
@@ -78,7 +78,7 @@ export default {
         border: none;
         border-radius: 5px;
         position: relative;
-        top: -30px;
+        top: -50px;
         p {
             color: $btn-grey;
         }
@@ -91,6 +91,10 @@ export default {
         width:60%;
         margin-left: 10%;
         padding-bottom: 2rem;
+
+        .col {
+            margin-top: 3rem;
+        }
         
         h4 {
             padding-top: 2rem;

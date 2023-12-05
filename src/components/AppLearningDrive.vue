@@ -27,6 +27,7 @@ export default {
     background-size: contain;
     background-size: cover;
     padding:  4rem 0rem;
+    width: 100%;
 }
 .small-container {
     width: 80%;

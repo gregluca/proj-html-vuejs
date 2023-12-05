@@ -25,4 +25,9 @@ button {
         color: white;
     }
 }
+button:hover {
+    opacity: .8;
+    background-color: black;
+    color: $green-color;
+}
 </style>
