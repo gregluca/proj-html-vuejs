@@ -109,13 +109,18 @@ export default {
         }
         .card-car  {
                 text-align: center;
+
+            img {
+                width: 150px;
+            }    
                 
             button {
                 text-decoration: none;
                 border: 2px solid $btn-grey;
                 color: $btn-grey;
                 border-radius: 1rem;
-                padding: 5px;
+                padding: 2px;
+                margin-top: 10px;
                 background: none;
                 font-size: .8rem;
                 width: 100px;

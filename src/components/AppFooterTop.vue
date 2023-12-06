@@ -20,25 +20,27 @@ export default {
                 <p>Avada Driving School is the right choice for experienced drivers looking for a refrescher course, or the brand new driver wanting to pass first time.</p>
             </div>
             <div class="col-3">
+                <div class="box-grey">
                 <h5>CONTACT DETAILS</h5>
                 <ul>
                     <li>
                         <i class="fa-solid fa-house-chimney"></i>
-                        <p>12345 North Main street, New York, NY 555555</p>
+                        <p><a href="">12345 North Main street, New York, NY 555555</a></p>
                     </li>
                     <li>
                         <i class="fa-solid fa-phone-flip"></i>
-                        <p>1.800.555.6789</p>
+                        <p><a href="">1.800.555.6789</a></p>
                     </li>
                     <li>
                         <i class="fa-regular fa-envelope"></i>
-                        <p>info@your-domain.com</p>
+                        <p><a href="">info@your-domain.com</a></p>
                     </li>
                     <li>
                         <i class="fa-solid fa-link"></i>
-                        <p>Theme-Fusion.com</p>
+                        <p><a href="">Theme-Fusion.com</a></p>
                     </li>
                 </ul>
+                </div>
             </div>
             <div class="col-3">
                 <h5>COURSES</h5>
@@ -46,19 +48,19 @@ export default {
                 <ul>
                     <li>
                         <i class="fa-regular fa-circle-right"></i>
-                        <p><strong>Pass Plus</strong></p>
+                        <p><strong><a href="">Pass Plus</a></strong></p>
                     </li>
                     <li>
                         <i class="fa-regular fa-circle-right"></i>
-                        <p><strong>Intensive Course</strong></p>
+                        <p><strong><a href="">Intensive Course</a></strong></p>
                     </li>
                     <li>
                         <i class="fa-regular fa-circle-right"></i>
-                        <p><strong>Automatic</strong></p>
+                        <p><strong><a href="">Automatic</a></strong></p>
                     </li>
                     <li>
                         <i class="fa-regular fa-circle-right"></i>
-                        <p><strong>Instructor Training</strong></p>
+                        <p><strong><a href="">Instructor Training</a></strong></p>
                     </li>
                 </ul>
                 </div>
@@ -99,8 +101,19 @@ export default {
 
 }
 .col-3 {
+    .box-grey {
+        a {
+            text-decoration: none;
+            color: $btn-grey;
+        }
+    }
     .box-green {
         color: $green-color;
+
+        a {
+            text-decoration: none;
+            color: $green-color;
+        }
     }
     .box {
         display: flex;
