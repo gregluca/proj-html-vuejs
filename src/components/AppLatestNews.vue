@@ -21,8 +21,10 @@ export default {
                     <img src="../assets/img/blog-choosecar-700x441.jpg" alt="">
                 </div>
                 <p><strong>What Car to Start With?</strong></p>
-                <p>February 7th, 2019 /</p>
-                <span> 0 Comments</span>
+                <div class="box-center">
+                    <p>February 7th, 2019 /</p>
+                    <span> 0 Comments</span>
+                </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
             </div>
             <div class="r-card">
@@ -30,8 +32,10 @@ export default {
                     <img src="../assets/img/blogpost-10and2-700x441.jpg" alt="">
                 </div>
                 <p><strong>Avada Driving School Expanding</strong></p>
-                <p>February 7th, 2019 /</p>
-                <span> 0 Comments</span>
+                <div class="box-center">
+                    <p>February 7th, 2019 /</p>
+                    <span> 0 Comments</span>
+                </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
             </div>
             <AppButton :buttonText="buttonText"/>
@@ -44,6 +48,7 @@ export default {
 
 </template>
 <style scoped lang="scss">
+@use "../style/partials/variables" as *;
 .big-container {
     width: 100%;
     background-image: url(../assets/img/latestnews-background.jpg);
@@ -60,7 +65,29 @@ export default {
     display: flex;
     justify-content: center;
     text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     
+
+     p {
+        color: $btn-grey;
+        font-size: .8rem;
+     }
+    .box-center {
+        display: flex;
+        justify-content: center;
+        font-size: .8rem;
+        p {
+            color: $btn-grey;
+        }
+        span {
+            color: $green-color;
+        }
+    }
+
+    strong {
+        font-size: 1.5rem;
+        color: $green-color;
+    }
     .car-img {
         padding: 1rem;
     }
@@ -83,5 +110,8 @@ img {
 .car-img:hover{
     opacity: .5;
     transform: scale(1.1);
+}
+.blogspot {
+   padding-bottom: 5rem;
 }
 </style>
