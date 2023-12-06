@@ -1,5 +1,6 @@
 <script>
 import AppButton from './AppButton.vue';
+import AppHeaderTop from './AppHeaderTop.vue';
 
 
 export default {
@@ -11,10 +12,11 @@ export default {
             buttonText:"BOOK NOW"
         };
     },
-    components: { AppButton }
+    components: { AppButton, AppHeaderTop }
 }
 </script>
 <template>
+    <AppHeaderTop />
 <div class="big-container">
     <div class="small-container">
         <img src="../assets/img/avada-drivers-logo-2x.png" alt="">
