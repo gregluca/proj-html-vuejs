@@ -17,7 +17,6 @@ export default {
     <div class="small-container">
         <div class="row">
             <div class="col">
-                <h2>95%</h2>
             </div>
             <div class="col">
                 <p>ciao</p>
@@ -56,6 +55,8 @@ export default {
             display: flex;
             justify-content: center;
             align-items: center;
+
+
         }
     }
     .center {
