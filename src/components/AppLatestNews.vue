@@ -38,7 +38,9 @@ export default {
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
             </div>
-            <AppButton :buttonText="buttonText"/>
+            <div class="box-btn">
+                <AppButton :buttonText="buttonText"/>
+            </div>
         </div>
         <div class="blogspot">
             <img src="../assets/img/latestnews-bottom.png" alt="">
@@ -60,6 +62,10 @@ export default {
     margin: 0 auto;
 }
 .row {
+    position: relative;
+    top: -50px;
+    border-top: 5px solid #7799ad ;
+    border-radius: 10px 10px 5px 5px;
     background: white;
     padding: 1rem;
     display: flex;
@@ -104,6 +110,8 @@ export default {
     }
 }
 img {
+    position: relative;
+    top: -50px;
     width: 100%;
     display: block;
 }
@@ -112,6 +120,9 @@ img {
     transform: scale(1.1);
 }
 .blogspot {
-   padding-bottom: 5rem;
+   padding-bottom: 2rem;
+}
+.box-btn {
+    margin: 3rem;
 }
 </style>
