@@ -65,6 +65,7 @@ export default {
             align-items: center;
         }
         .box-left {
+            padding: 5rem;
             width: 70%;
             p {
                 color: $btn-grey;

@@ -18,7 +18,9 @@ export default {
             <img src="../assets/img/new-corner.jpg" alt="">
             <h3>Courses</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente minima cumque provident esse voluptatem error, at quibusdam </p>
-            <AppButton :buttonText="buttontext"/>
+            <div class="box-btn">
+                <AppButton :buttonText="buttontext"/>
+            </div>
         </div>
         <div class="row">
             <div class="col">
@@ -97,6 +99,7 @@ export default {
 
         .col {
             margin-top: 3rem;
+
         }
         
         h4 {
@@ -117,10 +120,21 @@ export default {
                 font-size: .8rem;
                 width: 100px;
             }
+            button:hover {
+                border: 2px solid $green-color;
+                color: $green-color;
+                transform: scale(1.2);
+            }
             a {
                 text-decoration: none;
             }
         }
     }
+}
+.box-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2rem ;
 }
 </style>
