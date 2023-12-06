@@ -41,6 +41,8 @@ export default {
         padding: 3rem;
         
         h2 {
+            text-align: center;
+            width: 100%;
             font-size: 1.4rem;
         }
 
