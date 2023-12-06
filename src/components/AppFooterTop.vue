@@ -42,6 +42,7 @@ export default {
             </div>
             <div class="col-3">
                 <h5>COURSES</h5>
+                <div class="box-green">
                 <ul>
                     <li>
                         <i class="fa-regular fa-circle-right"></i>
@@ -60,6 +61,7 @@ export default {
                         <p><strong>Instructor Training</strong></p>
                     </li>
                 </ul>
+                </div>
             </div>
             <div class="col-3">
                 <div class="box">
@@ -88,6 +90,7 @@ export default {
         width: 200px;
     }
     h5 {
+        padding-bottom: 1rem;
         color: white;
         text-align:start
     }
@@ -96,6 +99,9 @@ export default {
 
 }
 .col-3 {
+    .box-green {
+        color: $green-color;
+    }
     .box {
         display: flex;
         flex-wrap: wrap;
