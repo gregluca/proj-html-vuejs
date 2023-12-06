@@ -56,6 +56,7 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    padding-bottom: 100px;
 }
 .small-container {
     width: 70%;

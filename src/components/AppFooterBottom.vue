@@ -16,10 +16,10 @@ export default {
             <p>&copy; Copyright 2012-2020/ Avada Theme by <a href="">ThemeFusion</a> / All Rights Reserved / Powered by <a href="">WordPress</a></p>
         </div>
         <div class="box-right">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-instagram"></i>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
         </div>
     </div>
     </div>
@@ -51,10 +51,20 @@ export default {
             text-decoration: none;
             color: $green-color;
         }
+        a:hover {
+            opacity: .6;
+        }
     }
     .box-right {
+        a {
+            text-decoration: none;
+            color: $btn-grey;
+        }
         i {
             margin-right: 1rem;
+        }
+        i:hover {
+            opacity: .6;
         }
     }
 }

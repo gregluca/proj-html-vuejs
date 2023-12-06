@@ -106,6 +106,9 @@ export default {
             text-decoration: none;
             color: $btn-grey;
         }
+        p:hover {
+            opacity: .6;
+        }
     }
     .box-green {
         color: $green-color;
@@ -114,7 +117,11 @@ export default {
             text-decoration: none;
             color: $green-color;
         }
+        p:hover {
+            opacity: .6;
+        }
     }
+
     .box {
         display: flex;
         flex-wrap: wrap;
